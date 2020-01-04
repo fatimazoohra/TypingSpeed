@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.contenu{
+			margin-top: 100px;
+			border:4px solid black;
+			width :500px;
+			height: 450px;
+			text-align: center;
+			margin-left: 32%;
+		}
+
+ 
+	.hs {
+		top:0px;
+	 	background : black;
+	 	color:white;
+	 	text-align: center;
+	 	/*margin-left:30%;*/
+	 	width :500px;
+	 	height: 60px;
+	 }
+	 .Speed{
+	 	text-align: center;
+	 	font-size: 50px;
+	 }
+	
+</style> 
+</head>
+<body>
+
+ <div class="contenu">
+	<div class='hs'><h1>Typing Speed </h1></div>
+	<div><p> Les événements permettent de déclencher une fonction selon qu'une action s'est produire ou non</p></div>
+	<textarea type=text rows="10" cols="50"  onkeypress="StartChrono()"	id="text"></textarea><br/>
+	
+	<input type="button" class="btn" id="btn" name="btn" value="Redemarrer" onclick="Redemarrer()">
+	
+	<div id="Speed" class="Speed">
+			<span>0 h </span>:
+			<span>0 min </span>:
+			<span>0 s </span>
+	</div>
+</div> 
+
+
+<script type="text/javascript" src="TypingSpeed.js"></script>
+
+</body>
+</html>
